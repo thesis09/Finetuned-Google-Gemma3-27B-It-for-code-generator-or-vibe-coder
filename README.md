@@ -225,7 +225,7 @@ pip install transformers trl peft bitsandbytes accelerate torch sentencepiece
 
 ```bash
 # 1. Download the model from Hugging Face
- [ Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
+[Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
 
 # 2. Start the inference server
 python serve/main.py --model ./gemma3-forge-Q4_K_M.gguf --gpu-layers 25
