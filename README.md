@@ -22,6 +22,7 @@ This repository contains the full pipeline — not just the model weights — in
 | DebugBench accuracy | **74%** (37/50) | — | Token-overlap metric, directional only |
 
 For a complete architectural breakdown of the QLoRA training loop and how the GGUF tokenizer corruption was bypassed, read the engineering post-mortem here: https://medium.com/@kaustubh09k/i-fine-tuned-a-27-billion-parameter-model-as-a-fresher-heres-everything-that-broke-1db882563e4a
+
 Download the model from Hugging Face:
 [Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
 
