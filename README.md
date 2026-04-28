@@ -21,6 +21,10 @@ This repository contains the full pipeline — not just the model weights — in
 | MBPP pass@1 | **71%** (~73% corrected) | ~72% | 100-problem sanitized split |
 | DebugBench accuracy | **74%** (37/50) | — | Token-overlap metric, directional only |
 
+For a complete architectural breakdown of the QLoRA training loop and how the GGUF tokenizer corruption was bypassed, read the engineering post-mortem here: https://medium.com/@kaustubh09k/i-fine-tuned-a-27-billion-parameter-model-as-a-fresher-heres-everything-that-broke-1db882563e4a
+Download the model from Hugging Face:
+[Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
+
 The HumanEval gain (+15pp over base) is real but partially reflects training distribution overlap with CodeAlpaca and self-oss-instruct. **MBPP is the honest generalization number** — it matches the base model, confirming no catastrophic forgetting.
 
 ---
@@ -224,13 +228,10 @@ pip install transformers trl peft bitsandbytes accelerate torch sentencepiece
 ## Quick start
 
 ```bash
-# 1. Download the model from Hugging Face
-[Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
-
-# 2. Start the inference server
+# 1. Start the inference server
 python serve/main.py --model ./gemma3-forge-Q4_K_M.gguf --gpu-layers 25
 
-# 3. Open the web UI
+# 2. Open the web UI
 streamlit run app.py
 # → http://localhost:8501
 ```
