@@ -12,6 +12,13 @@ Forge is a QLoRA fine-tune of Google's **Gemma 3 27B-IT** model, conditioned for
 This repository contains the full pipeline — not just the model weights — including the data preparation notebook, training code, export utilities, inference server, Streamlit UI, and evaluation harness.
 
 ---
+This is the video demo : 
+
+https://github.com/user-attachments/assets/b1b9dd71-20f5-4fee-8a74-1deaeeaa4d87
+
+
+
+
 
 ## Results
 
