@@ -13,6 +13,7 @@ This repository contains the full pipeline — not just the model weights — in
 
 ---
 This is the video demo : 
+(NOTE: The generation phase in the attached video is speed up 8x. Real-time inference on the 3060 took ~4 minutes.)
 
 https://github.com/user-attachments/assets/b1b9dd71-20f5-4fee-8a74-1deaeeaa4d87
 
