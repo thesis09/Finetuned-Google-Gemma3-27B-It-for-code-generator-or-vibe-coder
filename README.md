@@ -35,6 +35,11 @@ For a complete architectural breakdown of the QLoRA training loop and how the GG
 Download the model from Hugging Face:
 [Link to HF repo](https://huggingface.co/KK9922/Forge-Gemma-3-27B-GGUF)
 
+
+> Author is open to LLM engineering roles (India onsite / worldwide remote). Contact: kaustubhkubitkar@gmail.com
+
+
+
 The HumanEval gain (+15pp over base) is real but partially reflects training distribution overlap with CodeAlpaca and self-oss-instruct. **MBPP is the honest generalization number** — it matches the base model, confirming no catastrophic forgetting.
 
 ---
